@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+html,
+body {
+  margin: 0px;
+  border: 0px;
+  background-color: rgb(0, 0, 29);
+  font-family: "Anton", sans-serif;
+}
+.logo img {
+  height: 150px;
+}
+.s1 {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchForm {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.researchButton {
+  flex-grow: 1;
+  flex-shrink: 1;
+  transition: 1s;
+  font-family: "Anton", sans-serif;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border-radius: 20px;
+}
+.researchButton:hover {
+  background-color: rgb(127, 251, 255);
+  color: rgb(23, 0, 29);
+  border-color: rgb(127, 251, 255);
+}
+.searchInput {
+  flex-grow: 3;
+  flex-shrink: 1;
+  font-family: "Anton", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  color: rgb(127, 251, 255);
+  border: 3px solid rgb(127, 251, 255);
+  border-radius: 20px;
+}
+.searchInput::placeholder {
+  color: rgba(127, 251, 255, 0.781);
+}
+.searchForm input {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.s2 {
+  transition: 1s;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.s2 div label {
+  font-size: 2.5em;
+}
+.information-container {
+  margin: 10px 0px;
+}
+/******************************* Map Style *******************************/
+.s3 {
+  border-radius: 2em;
+}
+#map {
+  height: 400px;
+  width: 600px;
+  border-radius: 2em;
+}
+/************************************************************************/
+
+.hidden {
+  display: none;
+}
+.inv {
+  opacity: 0;
+}
+
+/******************************** COLORS ********************************/
+.lite-blue {
+  color: rgb(127, 251, 255);
+}
+.silver-Color {
+  color: rgb(218, 218, 218);
+}
+.silver-border {
+  border: 3px solid rgb(218, 218, 218);
+}
+/************************************************************************/
+/************************* loading spinner *****************************/
+
+.loading-spinner {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.loading-spinner::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 20px rgba(127, 251, 255, 0.048) solid;
+  border-top-color: rgb(127, 251, 255);
+
+  border-radius: 20em;
+  animation: loding 0.9s ease infinite;
+}
+@keyframes loding {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/************************************************************************/
+
+@media screen and (max-width: 600px) {
+  .searchForm input {
+    font-size: 1.4em;
+  }
+  #map {
+    height: 200px;
+    width: 300px;
+  }
+  .s2 div label {
+    font-size: 1.5em;
+  }
+}

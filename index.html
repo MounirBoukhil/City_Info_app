@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="s1">
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="" /></a>
+      </div>
+      <form class="searchForm">
+        <input type="text" class="searchInput" placeholder="" />
+        <input type="submit" value="Research" class="researchButton silver-Color silver-border" />
+      </form>
+    </header>
+    <section class="s2 hidden">
+      <div class="information-container">
+        <div><label class="silver-Color">Country :</label> <label class="countryName lite-blue"></label></div>
+        <div><label class="silver-Color">Continent :</label> <label class="continentName lite-blue"></label></div>
+        <div><label class="silver-Color">Local time :</label> <label class="localTime lite-blue"></label></div>
+        <div><label class="silver-Color">Condition :</label> <label class="condition lite-blue"></label></div>
+        <div><label class="silver-Color">Temperature :</label> <label class="Temperature lite-blue"></label></div>
+        <div><label class="silver-Color">Wind speed :</label> <label class="windSpeed lite-blue"></label></div>
+      </div>
+      <div class="s3 silver-border"></div>
+    </section>
+    <section class="s4 hidden">
+      <h1>Failed to load information</h1>
+    </section>
+    <div class="spinner-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
